@@ -10,14 +10,14 @@ body {
 
 .container {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 350px;
 }
 
 .card {
-    background-color: #1f2fdf;
+    background: linear-gradient(to right, #04075c, #4e8af2);
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 20px;
@@ -47,11 +47,12 @@ form {
 
 label {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 input,
 select {
-    padding: 10px;
+    padding: 15px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -83,10 +84,17 @@ select {
     gap: 20px;
 }
 
+.expiry-cvv label {
+    margin-top: 20px;
+    /* Increased margin-top for more space above */
+    margin-bottom: 20px;
+    /* Increased margin-bottom for more space below */
+}
+
 button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #007BFF;
+    background: linear-gradient(to right, #04075c, #4e8af2);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -95,5 +103,5 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: linear-gradient(to right, #474987, #4e8af2);
 }
