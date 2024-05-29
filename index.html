@@ -9,87 +9,88 @@
   <body>
     <div class="container">
       <div class="card" id="card">
-        <div class="card__front card__part">
-          <div class="card__logo">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
-              alt="Card Logo"
-            />
-          </div>
+        <div class="card__logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+            alt="Card Logo"
+          />
+        </div>
+        <div class="card__details">
           <div class="card__number" id="card-number-display">
-            #### #### #### ####
+            4111 1111 1111 1111
           </div>
           <div class="card__holder">
-            <span class="card__holder__title">Card Holder</span>
             <span class="card__holder__name" id="cardholder-name-display"
-              >Bruce Wayne</span
+              >BRUCE WAYNE</span
             >
           </div>
           <div class="card__exp">
-            <span class="card__exp__title">Expires</span>
-            <span class="card__exp__date" id="expiry-date-display">MM/YY</span>
+            <span class="card__exp__title">valid thru</span>
+            <span class="card__exp__date" id="expiry-date-display"
+              >02/2020</span
+            >
           </div>
         </div>
       </div>
       <form id="credit-card-form">
-        <h2>Payment Information</h2>
-        <label for="card-number">Card Number</label>
-        <div class="card-number-inputs">
+        <div class="form-group">
+          <label for="card-number">CARD NUMBER</label>
+          <div class="card-number-inputs">
+            <input
+              type="text"
+              id="card-number-1"
+              class="card-number"
+              maxlength="4"
+              required
+            />
+            <input
+              type="text"
+              id="card-number-2"
+              class="card-number"
+              maxlength="4"
+              required
+            />
+            <input
+              type="text"
+              id="card-number-3"
+              class="card-number"
+              maxlength="4"
+              required
+            />
+            <input
+              type="text"
+              id="card-number-4"
+              class="card-number"
+              maxlength="4"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cardholder-name">CARD HOLDER</label>
           <input
             type="text"
-            id="card-number-1"
-            class="card-number"
-            maxlength="4"
-            required
-          />
-          <input
-            type="text"
-            id="card-number-2"
-            class="card-number"
-            maxlength="4"
-            required
-          />
-          <input
-            type="text"
-            id="card-number-3"
-            class="card-number"
-            maxlength="4"
-            required
-          />
-          <input
-            type="text"
-            id="card-number-4"
-            class="card-number"
-            maxlength="4"
+            id="cardholder-name"
+            name="cardholder-name"
             required
           />
         </div>
-        <label for="cardholder-name">Card Holder</label>
-        <input
-          type="text"
-          id="cardholder-name"
-          name="cardholder-name"
-          required
-        />
-        <br />
-        <div class="expiry-cvv">
-          <div>
-            <label for="expiry-month">Expiration Date</label>
-            <div class="expiry-date-inputs">
-              <select id="expiry-month" required>
-                <option value="" disabled selected>MM</option>
-              </select>
-              <select id="expiry-year" required>
-                <option value="" disabled selected>YY</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <label for="cvv">CVV</label>
-            <input type="text" id="cvv" name="cvv" maxlength="3" required />
+        <div class="form-group">
+          <label for="expiry-month">EXPIRATION DATE</label>
+          <div class="expiry-date-inputs">
+            <select id="expiry-month" required>
+              <option value="" disabled selected>MM</option>
+            </select>
+            <select id="expiry-year" required>
+              <option value="" disabled selected>YY</option>
+            </select>
           </div>
         </div>
-        <button type="submit">Submit</button>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" maxlength="3" required />
+        </div>
+        <button type="submit">SUBMIT</button>
       </form>
     </div>
     <script src="script.js"></script>
